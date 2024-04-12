@@ -86,7 +86,7 @@
                         <li class="dropdown">
                             <a id="profile-dropdown" class="border-0 nav-link dropdown-toggle arrow-none nav-user px-2" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                 <span class="account-user-avatar">
-                                    <img src="../assets/images/users/avatar-1.jpg" alt="user-image" width="32" class="rounded-circle"> <!-- user avatar -->
+                                    <img src="../assets/images/users/user.png" alt="user-image" width="32" class="rounded-circle"> <!-- user avatar -->
                                 </span>
                                 <span class="d-lg-flex flex-column gap-1 d-none">
                                     <h5 class="my-0">Admin Name</h5> <!-- user name -->
@@ -225,10 +225,10 @@
                                                                 <a class="nav-link active" aria-expanded="false" data-bs-toggle="pill" href="#Chart-of-Accounts-pane">Chart of Accounts</a>
                                                             </li>
                                                             <li class="nav-item" role="presentation">
-                                                                <a class="nav-link" aria-expanded="true" data-bs-toggle="pill" href="#GL-Class-pane">GL Groups</a>
+                                                                <a class="nav-link" aria-expanded="true" data-bs-toggle="pill" href="#GL-Groups-pane">GL Groups</a>
                                                             </li>
                                                             <li class="nav-item" role="presentation">
-                                                                <a class="nav-link" aria-expanded="true" data-bs-toggle="pill" href="#GL-Group-pane">GL Class</a>
+                                                                <a class="nav-link" aria-expanded="true" data-bs-toggle="pill" href="#GL-Class-pane">GL Class</a>
                                                             </li>
                                                         </ul>
 
@@ -236,466 +236,102 @@
 				                                        <div class="tab-content">  <!-- contents that will be shown when tab navigation buttons are being click -->
 				                                            <div class="tab-pane show active" id="Chart-of-Accounts-pane" role="tabpanel" aria-labelledby="for-interview" tabindex="0">
 
-				                                                <!-- main content -->
+				                                                <!-- main content "Chart of Accounts" -->
                                                                 <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th><input type="checkbox">&nbsp Account No.</input></th>
+                                                                            <th><input type="checkbox">&nbsp Account Code.</input></th>
                                                                             <th>Account Name</th>
-                                                                            <th>Date Created</th>
+                                                                            <th>Date</th>
                                                                             <th>Actions</th>
-                                                                           
                                                                         </tr>
                                                                     </thead>
-
-                                                                    <div class="flex  ">
-                                                                        <button type="button" class="btn col-3" style="background-color: #063970; flex-direction:column-reverse none; border-radius: 6px; color: white;" data-bs-toggle="modal" data-bs-target="#modal"><i class="mdi mdi-plus"></i>Add New Item</button>
-                                                                    </div>  
-                
-
-
                                                                     <tbody>
+                                                                    
+                                                                      
                                                                         <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
+                                                                            <td><input type="checkbox">&nbsp DL281 308 0793</input></td>
                                                                             <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
+                                                                                <img src="../assets/images/users/user.png" alt="table-user" class="me-2 rounded-circle" />
+                                                                                Payables
                                                                             </td>
-                                                                            <td>July 24, 1950</td>
+                                                                            <td>September 1, 2024</td>
                                                                             <td class="table-action">
+                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                                                                 <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                              
                                                                             </td>
                                                                         </tr>
-
+                                                                      
                                                                         <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
+                                                                            <td><input type="checkbox">&nbsp DL281 308 0793</input></td>
                                                                             <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
+                                                                                <img src="../assets/images/users/user.png" alt="table-user" class="me-2 rounded-circle" />
+                                                                                Account Recievables
                                                                             </td>
-                                                                            <td>July 24, 1950</td>
+                                                                            <td>September 1, 2024</td>
                                                                             <td class="table-action">
+                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                                                                 <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                                              
+                                                                              
                                                                             </td>
                                                                         </tr>
-
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
-                                                                            <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
-                                                                            </td>
-                                                                            <td>July 24, 1950</td>
-                                                                            <td class="table-action">
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
-                                                                            <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
-                                                                            </td>
-                                                                            <td>July 24, 1950</td>
-                                                                            <td class="table-action">
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
-                                                                            <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
-                                                                            </td>
-                                                                            <td>July 24, 1950</td>
-                                                                            <td class="table-action">
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
-                                                                            <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
-                                                                            </td>
-                                                                            <td>July 24, 1950</td>
-                                                                            <td class="table-action">
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
-                                                                            <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
-                                                                            </td>
-                                                                            <td>July 24, 1950</td>
-                                                                            <td class="table-action">
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                            </td>
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    583985         
-                                                                                </label>
-                                                                              </div></td>
-                                                                            <td class="table-user">
-                                                                                
-                                                                                <img src="../assets/images/users/avatar-11.jpg" alt="table-user" class="me-2 rounded-circle" />
-                                                                                Risa D. Pearson
-                                                                            </td>
-                                                                            <td>July 24, 1950</td>
-                                                                            <td class="table-action">
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
-                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                                                            </td>
-                                                                        </tr>
-                                                                        
-                                                                        
+                                                                      
                                                                     </tbody>
                                                                 </table>
 				                                                   
 				                                            </div>
 				                                        </div>
 
-				                                        <!-- tab content -->
+				                                        <!-- tab content "GL Groups"-->
 				                                        <div class="tab-content">
-				                                            <div class="tab-pane" id="GL-Class-pane" role="tabpanel" aria-labelledby="GL-Class" tabindex="1">
+				                                            <div class="tab-pane" id="GL-Groups-pane" role="tabpanel" aria-labelledby="GL-Class" tabindex="1">
                                                                 <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th >
-                                                                            <div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    Group Name         
-                                                                                </label>
-                                                                              </div>
-                                                                            </th>
+                                                                            <th><input type="checkbox">&nbsp Group Name</input></th>
                                                                             <th>Date Created</th>
                                                                             <th>Actions</th>
-                                                                           
                                                                         </tr>
                                                                     </thead>
-                                                                
                                                                     <tbody>
+                                                                    
+                                                                      
                                                                         <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    ipsum         
-                                                                                </label>
-                                                                              </div></td>
-                        
-                                                                            
-                                                                            <td>6/3/2012</td>
-                                                                            <td> <i class="uil-eye"></i>
-                                                                                <i class="uil-pen"></i></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td><div class="form-check">
-                                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                                                <label class="form-check-label" for="flexCheckDefault">
-                                                                                    Lorem        
-                                                                                </label>
-                                                                              </div></td>
-                                                                            
-                                                                            <td>6/3/2012</td>
-                                                                            <td> <i class="uil-eye"></i>
-                                                                                <i class="uil-pen"></i>
-                                                                            </td>
-                                                                            
+                                                                            <td><input type="checkbox">&nbsp Account Payables</input></td>
                                                                            
+                                                                            <td>September 1, 2024</td>
+                                                                            <td class="table-action">
+                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
+                                                                              
+                                                                            </td>
                                                                         </tr>
                                                                       
-                                                                        
+                                                                        <tr>
+                                                                            <td><input type="checkbox">&nbsp Account Recievables</input></td>
+                                                                            <td>September 1, 2024</td>
+                                                                            <td class="table-action">
+                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                                                                <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-pencil"></i></a>
+                                                                              
+                                                                              
+                                                                            </td>
+                                                                        </tr>
+                                                                      
                                                                     </tbody>
+                                                                    
                                                                 </table>
 				                                            </div>
 				                                        </div>
 
-				                                        <!-- tab content -->
+				                                        <!-- tab content "GL Class"-->
 				                                        <div class="tab-content">
-				                                            <div class="tab-pane" id="GL-Groups-pane" role="tabpanel" aria-labelledby="for-enrollment" tabindex="2">
+				                                            <div class="tab-pane" id="GL-Class-pane" role="tabpanel" aria-labelledby="for-enrollment" tabindex="2">
 				                                                <table id="basic-datatable" class="table table-bordered dt-responsive nowrap w-100">
-				                                                    <thead>
-				                                                        <tr>
-				                                                            <th>Batch</th>
-				                                                            <th>Applicant</th>
-				                                                            <th>Screening Type</th>
-				                                                            <th>Status</th>
-				                                                            <th>Applicant Confirmation</th>
-				                                                            <th>Attended?</th>
-				                                                            <th>Remarks</th>
-				                                                            <th>Action</th>
-				                                                        </tr>
-				                                                    </thead>
-				                                                    <tbody>
-				                                                        <tr>
-				                                                            <th>1</th>
-				                                                            <th>Pia Delores</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>Yes</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>1</th>
-				                                                            <th>Martina Beatriz</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>3</th>
-				                                                            <th>Benji Barbo</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>2</th>
-				                                                            <th>Chad Kaawa</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>2</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>1</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>3</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>3</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>1</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>4</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>5</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>2</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                        <tr>
-				                                                            <th>3</th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th></th>
-				                                                            <th>No</th>
-				                                                            <th>Lorem ipsum dolor sit amet.</th>
-				                                                            <th class=" d-flex justify-content-center align-self-center">
-				                                                                <a type="button" data-bs-toggle="modal" data-bs-target="#modal">
-				                                                                    <i class="ri-edit-fill">
-				                                                                        <span>Edit</span>
-				                                                                    </i>
-				                                                                </a>
-				                                                            </th>
-				                                                        </tr>
-				                                                    </tbody>
+				                                                   
+                                                                   
 				                                                </table>
 				                                            </div>
 				                                        </div>
@@ -712,77 +348,6 @@
 
                     </div>
                     <!-- end of content -->
-
-                    <!-- modal -->
-                    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="scrollableModalTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <h5 class="modal-title d-flex justify-content-center">Applicant's Information</h5>
-                                    <form>
-                                        <div class="form-group needs-validation"> <!-- needs validation class, form won't accept blank input when submitting -->
-                                            <div class="m-1">
-                                                <label>Applicant's Name</label>
-                                                <input class="form-control" type="text" required> <!-- required attribute is added in every select and input tag -->
-                                            </div>
-                                            <div class="row m-1">
-                                            	<div class="col-3">
-	                                                <label>Batch</label>
-	                                                <select name="basic-datatable_length" aria-controls="basic-datatable" class="form-select form-select-sm" required>
-	                                                    <option value="1">1</option>
-	                                                    <option value="2">2</option>
-	                                                    <option value="3">3</option>
-	                                                    <option value="4">4</option>
-	                                                    <option value="5">5</option>
-	                                                </select>
-	                                            </div>
-	                                            <div class="col-5">
-	                                                <label>Screening Type</label>
-	                                                <select name="basic-datatable_length" aria-controls="basic-datatable" class="form-select form-select-sm" required>
-	                                                    <option></option>
-	                                                </select>
-                                            	</div>
-                                            	<div class="col-4">
-	                                                <label>Status</label>
-	                                                <select name="basic-datatable_length" aria-controls="basic-datatable" class="form-select form-select-sm" required>
-	                                                    <option></option>
-	                                                </select>
-                                            	</div>
-                                            </div>
-                                            <div class="row m-1">
-                                            	<div class="col-7">
-	                                                <label>Confirmed by Applicant?</label>
-	                                                <select name="basic-datatable_length" aria-controls="basic-datatable" class="form-select form-select-sm" required>
-	                                                    <option value="1">Yes</option>
-	                                                    <option value="0">No</option>
-	                                                </select>
-	                                            </div>
-	                                            <div class="col-5">
-	                                                <label>Attended?</label>
-	                                                <select name="basic-datatable_length" aria-controls="basic-datatable" class="form-select form-select-sm" required>
-	                                                    <option value="1">Yes</option>
-	                                                    <option value="0">No</option>
-	                                                </select>
-	                                            </div>
-                                            </div>
-                                            <div class="m-1">
-                                                <label>Remarks</label>
-                                                <textarea class="form-control" rows="3" required></textarea>
-                                                    <div class="valid-feedback">Valid.</div>
-                                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Save Changes</button>
-                                            <button type="button" class="btn btn-success">Pass</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end of modal -->
 
                 </div>
             </div>
