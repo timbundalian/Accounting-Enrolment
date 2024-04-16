@@ -232,7 +232,7 @@
                                                                 <table id="datatable-buttons"   class="table table-striped dt-responsive nowrap w-100">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th><input type="checkbox">&nbsp Transaction No.</input></th>
+                                                                            <th><input type="checkbox" class="checkbox" id="check-all">&nbsp Transaction No.</input></th>
                                                                             <th>Description</th>
                                                                             <th>Date</th>
                                                                             <th>Status</th>
@@ -243,7 +243,7 @@
                                                                     
                                                                       
                                                                         <tr>
-                                                                            <td><input type="checkbox">&nbsp DL281 308 0793</input></td>
+                                                                            <td><input type="checkbox" class="checkbox" data-id="[]">&nbsp DL281 308 0793</input></td>
                                                                             <td class="table-user">
                                                                                 <img src="../assets/images/users/2x2 ID.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                                                 Tuition Fee: Juan Dela Cruz
@@ -257,7 +257,7 @@
                                                                         </tr>
                                                                       
                                                                         <tr>
-                                                                            <td><input type="checkbox">&nbsp DL281 308 0793</input></td>
+                                                                            <td><input type="checkbox" class="checkbox" data-id="[]">&nbsp DL281 308 0793</input></td>
                                                                             <td class="table-user">
                                                                                 <img src="../assets/images/users/2x2 ID.jpg" alt="table-user" class="me-2 rounded-circle" />
                                                                                 Tuition Fee: Juan Dela Cruz
@@ -380,6 +380,38 @@
 
 		<!-- Datatable Init js -->
 		<script src="../assets/js/pages/demo.datatable-init.js"></script>
+
+        <script>
+            var checkAllCheckbox = document.getElementById('check-all');
+            var checkboxes = document.querySelectorAll('.checkbox');
+          
+            // Function to handle checkbox state
+            function handleCheckboxChange() {
+              var checkboxId = parseInt(this.getAttribute('data-id'));
+              if (this.checked) {
+                selectedCheckboxes.push(checkboxId);
+              } else {
+                var index = selectedCheckboxes.indexOf(checkboxId);
+                if (index !== -1) {
+                  selectedCheckboxes.splice(index, 1);
+                }
+              }
+              console.log("Selected checkboxes: ", selectedCheckboxes);
+            }
+          
+            // Add event listener to each checkbox
+            checkboxes.forEach(function(checkbox) {
+              checkbox.addEventListener('change', handleCheckboxChange);
+            });
+          
+            // Function to handle "select all" checkbox
+            checkAllCheckbox.addEventListener('change', function() {
+              checkboxes.forEach(function(checkbox) {
+                checkbox.checked = checkAllCheckbox.checked;
+              });
+            });
+          </script>
+
 
     </body>
 </html> 

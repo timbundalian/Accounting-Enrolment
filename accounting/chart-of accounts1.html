@@ -240,7 +240,7 @@
                                                                 <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th><input type="checkbox">&nbsp Account Code.</input></th>
+                                                                            <th><input type="checkbox" class="checkbox" id="check-all">&nbsp Account Code.</input></th>
                                                                             <th>Account Name</th>
                                                                             <th>Date</th>
                                                                             <th>Actions</th>
@@ -250,7 +250,7 @@
                                                                     
                                                                       
                                                                         <tr>
-                                                                            <td><input type="checkbox">&nbsp DL281 308 0793</input></td>
+                                                                            <td><input type="checkbox" class="checkbox" data-id="[]" >&nbsp DL281 308 0793</input></td>
                                                                             <td class="table-user">
                                                                                 <img src="../assets/images/users/user.png" alt="table-user" class="me-2 rounded-circle" />
                                                                                 Payables
@@ -264,7 +264,7 @@
                                                                         </tr>
                                                                       
                                                                         <tr>
-                                                                            <td><input type="checkbox">&nbsp DL281 308 0793</input></td>
+                                                                            <td><input type="checkbox" class="checkbox" data-id="[]" >&nbsp DL281 308 0793</input></td>
                                                                             <td class="table-user">
                                                                                 <img src="../assets/images/users/user.png" alt="table-user" class="me-2 rounded-circle" />
                                                                                 Account Recievables
@@ -290,7 +290,7 @@
                                                                 <table id="alternative-page-datatable" class="table dt-responsive nowrap w-100">
                                                                     <thead>
                                                                         <tr>
-                                                                            <th><input type="checkbox">&nbsp Group Name</input></th>
+                                                                            <th><input type="checkbox" class="checkbox" id="check-all">&nbsp Group Name</input></th>
                                                                             <th>Date Created</th>
                                                                             <th>Actions</th>
                                                                         </tr>
@@ -299,7 +299,7 @@
                                                                     
                                                                       
                                                                         <tr>
-                                                                            <td><input type="checkbox">&nbsp Account Payables</input></td>
+                                                                            <td><input type="checkbox" class="checkbox" data-id="[]">&nbsp Account Payables</input></td>
                                                                            
                                                                             <td>September 1, 2024</td>
                                                                             <td class="table-action">
@@ -310,7 +310,7 @@
                                                                         </tr>
                                                                       
                                                                         <tr>
-                                                                            <td><input type="checkbox">&nbsp Account Recievables</input></td>
+                                                                            <td><input type="checkbox" class="checkbox" data-id="[]">&nbsp Account Recievables</input></td>
                                                                             <td>September 1, 2024</td>
                                                                             <td class="table-action">
                                                                                 <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
@@ -376,6 +376,37 @@
 
 		<!-- Datatable Init js -->
 		<script src="../assets/js/pages/demo.datatable-init.js"></script>
+
+        <script>
+            var checkAllCheckbox = document.getElementById('check-all');
+            var checkboxes = document.querySelectorAll('.checkbox');
+          
+            // Function to handle checkbox state
+            function handleCheckboxChange() {
+              var checkboxId = parseInt(this.getAttribute('data-id'));
+              if (this.checked) {
+                selectedCheckboxes.push(checkboxId);
+              } else {
+                var index = selectedCheckboxes.indexOf(checkboxId);
+                if (index !== -1) {
+                  selectedCheckboxes.splice(index, 1);
+                }
+              }
+              console.log("Selected checkboxes: ", selectedCheckboxes);
+            }
+          
+            // Add event listener to each checkbox
+            checkboxes.forEach(function(checkbox) {
+              checkbox.addEventListener('change', handleCheckboxChange);
+            });
+          
+            // Function to handle "select all" checkbox
+            checkAllCheckbox.addEventListener('change', function() {
+              checkboxes.forEach(function(checkbox) {
+                checkbox.checked = checkAllCheckbox.checked;
+              });
+            });
+          </script>
 
     </body>
 </html> 

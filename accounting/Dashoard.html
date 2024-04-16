@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Dashboard Accounting</title>
+        <title>Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- App favicon -->
@@ -28,8 +28,9 @@
 	<body>
         <!-- Begin page -->
         <div class="wrapper">
-             <!-- ========== Topbar Start ========== -->
-             <div class="navbar-custom">
+
+            <!-- ========== Topbar Start ========== -->
+            <div class="navbar-custom">
                 <div class="topbar container-fluid">
                     <div class="d-flex align-items-center gap-lg-2 gap-1">
 
@@ -189,7 +190,6 @@
                 </div>
             </div>
             <!-- ========== Left Sidebar End ========== -->
-
 
             <!-- ============================================================== -->
             <!-- Start Page Content here -->
@@ -366,11 +366,12 @@
                                 </div>
                                 <div class="row">
                                 <div class="col-md-6   pt-2 ">
-                                    <!-- Portlet card -->
+                                    
+                                    <!-- Pie Chart -->
                                     <div class="card mb-md-0 mb-2">
                                         <div class="card-body">
                                             
-                                            <h5 class="card-title mb-0">Cash Flow</h5>
+                                            <h5 class="card-title mb-0" >Cash Flow</h5>
                                             <div dir="ltr">
                                                 <div id="simple-donut" class="" 
                                                 data-colors="
@@ -402,11 +403,14 @@
                     <!-- end of content -->
                 </div>
             </div>
+        
             <!-- ============================================================== -->
             <!-- End Page content -->
             <!-- ============================================================== -->
         </div>
+          
         <!-- END wrapper -->   
+        
         <!-- Vendor js -->
         <script src="../assets/js/vendor.min.js"></script>
 
@@ -418,6 +422,7 @@
         <script src="js/app.js"></script>
 
         <!-- Datatables js -->
+        <script src="../assets/vendor/select2/js/select2.min.js"></script>
 		<script src="../assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
 		<script src="../assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 		<script src="../assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
@@ -426,14 +431,14 @@
 		<!-- Datatable Init js -->
 		<script src="../assets/js/pages/demo.datatable-init.js"></script>
 
+        <!-- Datatable Init js -->
+		<script src="../assets/js/pages/demo.datatable-init.js"></script>
+
         <!-- Apex Chart js -->
         <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
 
         <!-- Apex Chart Pie Demo js -->
-        <script src="../assets/js/pages/demo.apex-pie.js"></script>        
-
-        <!-- App js -->
-        <script src="../assets/js/app.min.js"></script>
+        <script src="../assets/js/pages/demo.apex-pie.js"></script> 
 
     </body>
 </html> 
